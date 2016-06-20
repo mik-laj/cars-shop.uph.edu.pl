@@ -1,0 +1,18 @@
+.media {
+	display: table;
+}
+.media__image, .media__description{
+	display: table-cell;
+	vertical-align: middle;
+}
+.media__image {
+	width: percentage(1/3);
+	img {
+		width: 100%;
+	}
+}
+.media__description {
+	padding-left: 1em;
+	width: percentage(2/3);
+	display: table-cell;
+}

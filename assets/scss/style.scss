@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+img{
+	max-width: 100%;
+}
+
+@import 'partials/mixins';
+@import 'partials/grid';
+@import 'partials/floats';
+@import 'partials/form';
+@import 'partials/buttons';
+@import 'partials/media';
+@import 'partials/typography';
+@import 'partials/modal';
+
+
+// Project specific
+@import 'partials/card';
+
+header{
+	padding: 20px 10px;
+}
+.header-title{
+	font-size: 48px;
+}
+.header-lead{
+	font-size: 24px;
+}
+
+.sidebar-section{
+	margin-bottom: .5em;
+}
+.sidebar-section__title{
+	text-decoration: uppercase;
+	background: #324318;
+	color: white;
+	padding: 3px;
+}

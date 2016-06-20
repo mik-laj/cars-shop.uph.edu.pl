@@ -1,0 +1,41 @@
+.card{
+	position: relative;
+	background: white;
+	padding: 1em .5em .5em;
+	margin-bottom: 2em;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: .5em;
+	}
+	&:nth-child(4n):after{
+		background: #1d2b53;
+	}
+	&:nth-child(4n+1):after{
+		background: #7e2553;
+	}
+	&:nth-child(4n+2):after{
+		background: #ff004d;
+	}
+	&:nth-child(4n+3):after{
+		background: #fff024;
+	}
+}
+.card-list{
+	margin: 0; 
+	padding: 1em;
+	list-style: none;
+}
+.card-list__horizontal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.card{
+		width: calc( 33% - 2em );
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}

@@ -1,0 +1,34 @@
+.container{
+	width: 900px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.row{
+	@include clearfix;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		float: left;
+		position: relative;	
+		width: percentage(1 / 12 *  $i);
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.col-push-#{$i}{
+		left: percentage(1 / 12 *  $i);
+	}
+
+	.col-pull-#{$i}{
+		left: percentage(-1 * 1 / 12 *  $i);
+	}
+	
+	.col-offset-#{$i}{
+		margin-left: percentage(1 / 12 *  $i);
+	}
+}
+[class*="col-"]{
+	border: 1px solid darken(white, 20%);
+	background: darken(white, 10%);
+}
